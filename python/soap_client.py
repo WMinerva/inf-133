@@ -1,5 +1,5 @@
 from zeep import Client
 
-Client = Client("https://localhost:8000")
-result = Client.service.Saludar("Nicolas")
+client = Client("http://localhost:8000")
+result = client.service.Saludar(nombre="Nicolas")
 print(result)
