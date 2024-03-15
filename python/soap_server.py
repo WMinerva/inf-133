@@ -11,7 +11,8 @@ def Sumar(a, b):
 
 
 def CadenaPalindromo(cadena):
-    return cadena == cadena[::-1]
+    # return cadena == cadena[::-1]
+    return cadena.lower() == cadena[::-1].lower()
 
 
 dispatcher = SoapDispatcher(
